@@ -1,0 +1,40 @@
+.main {
+  min-height: 100vh;
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.card {
+  max-width: 350px;
+  min-width: 250px;
+  border: 1px solid black;
+}
+
+.card__head {
+  background-color: lightgrey;
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+
+.card__heading {
+  margin: 0;
+}
+
+.card__body {
+  background-color: white;
+}
+
+.list {
+  list-style: square;
+}
