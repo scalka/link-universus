@@ -1,3 +1,6 @@
+@import './styles/variables';
+@import './styles/common/mixins';
+
 .main {
   min-height: 100vh;
   padding: 2rem;
@@ -17,24 +20,24 @@
 
 .card {
   max-width: 350px;
-  min-width: 250px;
-  border: 1px solid black;
+  min-width: 200px;
+
+  & > * {
+    padding: 16px;
+  }
 }
 
-.card__head {
-  background-color: lightgrey;
-  padding: 8px;
-  border-bottom: 1px solid black;
+.card {
+  @include color-modifiers(background-color);
 }
 
 .card__heading {
   margin: 0;
 }
 
-.card__body {
-  background-color: white;
-}
-
 .list {
   list-style: square;
+  margin: 0;
+  padding-inline-start: 36px;
+  height: 100%;
 }
