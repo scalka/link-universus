@@ -34,7 +34,13 @@ export default function Home({ data }) {
                   <ol className={styles.list}>
                     {data[mainCategory][secCategory].map((item, i) => (
                       <li key={item.name + i}>
-                        <a href={item.url}>{item.name}</a>
+                        <a
+                          href={item.url}
+                          data-goatcounter-click="outlink"
+                          data-goatcounter-title={item.url}
+                        >
+                          {item.name}
+                        </a>
                       </li>
                     ))}
                   </ol>
