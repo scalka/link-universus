@@ -38,6 +38,8 @@ export default function Home({ data }) {
                           href={item.url}
                           data-goatcounter-click={item.url}
                           data-goatcounter-title={item.title}
+                          target="_blank"
+                          rel="noreferrer"
                         >
                           {item.name}
                         </a>
