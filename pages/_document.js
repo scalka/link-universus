@@ -19,6 +19,11 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap"
           rel="stylesheet"
         />
+        <script
+          data-goatcounter="https://digital-directory.goatcounter.com/count"
+          async
+          src="//gc.zgo.at/count.js"
+        ></script>
       </Head>
       <body>
         <Main />

@@ -4,9 +4,9 @@ import { nestedGroupsBy } from '../helpers/helpers';
 import { getRecords } from '../lib/airtable-api';
 import mockData from '../data/mockData.json';
 import styles from '../styles/Home.module.scss';
+import { Fragment } from 'react';
 
 export default function Home({ data }) {
-  console.log(data);
   return (
     <div className={styles.container}>
       <Head>
@@ -19,32 +19,28 @@ export default function Home({ data }) {
         <h1 className={styles.title}>Welcome to The Digital Directory</h1>
         <div className={styles.container}>
           {Object.keys(data).map((mainCategory, index) => (
-            <>
+            <Fragment key={`${mainCategory}${index}`}>
               {Object.keys(data[mainCategory]).map((secCategory) => (
                 <section
-                  key={mainCategory}
+                  key={secCategory}
                   className={`${styles.card} ${
                     styles[`card-lighter-${index}`]
                   }`}
                   data-category={mainCategory}
                 >
-                  <div
-                    className={`${styles.card__head} ${
-                      styles[`card-base-${index}`]
-                    }`}
-                  >
+                  <div className={`${styles[`card-base-${index}`]}`}>
                     <h2 className={styles.card__heading}>{secCategory}</h2>
                   </div>
                   <ol className={styles.list}>
-                    {data[mainCategory][secCategory].map((item) => (
-                      <li key={item.name}>
+                    {data[mainCategory][secCategory].map((item, i) => (
+                      <li key={item.name + i}>
                         <a href={item.url}>{item.name}</a>
                       </li>
                     ))}
                   </ol>
                 </section>
               ))}
-            </>
+            </Fragment>
           ))}
         </div>
       </main>
