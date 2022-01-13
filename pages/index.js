@@ -36,8 +36,8 @@ export default function Home({ data }) {
                       <li key={item.name + i}>
                         <a
                           href={item.url}
-                          data-goatcounter-click="outlink"
-                          data-goatcounter-title={item.url}
+                          data-goatcounter-click={item.url}
+                          data-goatcounter-title={item.title}
                         >
                           {item.name}
                         </a>
