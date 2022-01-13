@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { groupBy } from '../helpers/helpers';
+import { nestedGroupsBy } from '../helpers/helpers';
 import { getRecords } from '../lib/airtable-api';
-import styles from '../styles/Home.module.css';
+import mockData from '../data/mockData.json';
+import styles from '../styles/Home.module.scss';
 
 export default function Home({ data }) {
   console.log(data);
@@ -17,31 +18,44 @@ export default function Home({ data }) {
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome to The Digital Directory</h1>
         <div className={styles.container}>
-          {Object.keys(data).map((key) => (
-            <section key={key} className={styles.card}>
-              <div className={styles.card__head}>
-                <h2 className={styles.card__heading}>{key}</h2>
-              </div>
-              <ol className={`${styles.card__body} ${styles.list}`}>
-                {data[key].map((item) => (
-                  <li key={item.name}>
-                    <a href={item.url}>{item.name}</a>
-                  </li>
-                ))}
-              </ol>
-            </section>
+          {Object.keys(data).map((mainCategory, index) => (
+            <>
+              {Object.keys(data[mainCategory]).map((secCategory) => (
+                <section
+                  key={mainCategory}
+                  className={`${styles.card} ${
+                    styles[`card-lighter-${index}`]
+                  }`}
+                  data-category={mainCategory}
+                >
+                  <div
+                    className={`${styles.card__head} ${
+                      styles[`card-base-${index}`]
+                    }`}
+                  >
+                    <h2 className={styles.card__heading}>{secCategory}</h2>
+                  </div>
+                  <ol className={styles.list}>
+                    {data[mainCategory][secCategory].map((item) => (
+                      <li key={item.name}>
+                        <a href={item.url}>{item.name}</a>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
+              ))}
+            </>
           ))}
         </div>
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }
 
 export async function getStaticProps(context) {
   const records = await getRecords();
-  const formattedRecords = groupBy(records, 'secCategory');
+  //const records = mockData.apiResponse;
+  const formattedRecords = nestedGroupsBy(records, ['category', 'secCategory']);
   return {
     props: {
       data: formattedRecords,

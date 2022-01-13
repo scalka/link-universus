@@ -15,3 +15,23 @@ export function groupBy(arr, criteria) {
 
   return newObj;
 }
+
+/**
+ * Creates nested groups by object properties.
+ * `properties` array nest from highest(index = 0) to lowest level.
+ * @param {arr} arr - array of objects
+ * @param {String[]} properties
+ * @returns {Object}
+ */
+export function nestedGroupsBy(arr, properties) {
+  properties = Array.from(properties);
+  if (properties.length === 1) {
+    return groupBy(arr, properties[0]);
+  }
+  const property = properties.shift();
+  var grouped = groupBy(arr, property);
+  for (let key in grouped) {
+    grouped[key] = nestedGroupsBy(grouped[key], Array.from(properties));
+  }
+  return grouped;
+}

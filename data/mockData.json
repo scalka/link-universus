@@ -1,0 +1,172 @@
+{
+    "apiResponse": [
+        {
+            "id": "recMs6FdxevqQmpBG",
+            "name": "12Go Biking",
+            "url": "https://www.12gobiking.nl/",
+            "category": "Sports",
+            "secCategory": "Cycling"
+        },
+        {
+            "id": "recSh0OVkhDoqWOv1",
+            "name": "Baptist",
+            "url": "https://www.gereedschappelijk.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "recxBRj7DcM0QQ9eQ",
+            "name": "Chain reaction cycles",
+            "url": "https://www.chainreactioncycles.com/nl/en",
+            "category": "Sports",
+            "secCategory": "Cycling"
+        },
+        {
+            "id": "recb1Mu9Hn3xzRpCo",
+            "name": "Cooking life",
+            "url": "https://cookinglife.nl",
+            "category": "Home",
+            "secCategory": "Home"
+        },
+        {
+            "id": "recjc9LbbR5HagsAI",
+            "name": "Dutch language",
+            "url": "https://cbelanguages.nl/",
+            "category": "Study",
+            "secCategory": "Study"
+        },
+        {
+            "id": "recnAl3lZvKKr0rMe",
+            "name": "Ecotools",
+            "url": "https://www.ecotools.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "rec7et7PlYXirDM63",
+            "name": "Finnish Design Shop",
+            "url": "https://www.finnishdesignshop.com/",
+            "category": "Home",
+            "secCategory": "Interior Design"
+        },
+        {
+            "id": "recjkTtlv5cFrYCLL",
+            "name": "Flinders",
+            "url": "https://www.flinders.nl/",
+            "category": "Home",
+            "secCategory": "Interior Design"
+        },
+        {
+            "id": "recwSH7BTPC301H4J",
+            "name": "Fonq",
+            "url": "https://www.fonq.nl/",
+            "category": "Home",
+            "secCategory": "Interior Design"
+        },
+        {
+            "id": "recTw5GwSWtUpxSa5",
+            "name": "Futurumshop",
+            "url": "https://www.futurumshop.nl/",
+            "category": "Sports",
+            "secCategory": "Cycling"
+        },
+        {
+            "id": "rec38orxF1i7I9lXs",
+            "name": "Gereedschapcentrum",
+            "url": "https://www.gereedschapcentrum.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "recwoFHe3LxUj67Wa",
+            "name": "Gereedschappelijk",
+            "url": "https://www.gereedschappelijk.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "recONKLwpL0HuDwbP",
+            "name": "Gereedschappro",
+            "url": "https://www.gereedschappro.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "rec9HuID6WVQHIGyM",
+            "name": "HBM Machines",
+            "url": "https://www.hbm-machines.com/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "recVB2qtUfIjlGFuU",
+            "name": "Klium",
+            "url": "https://www.klium.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "reccYvhXSR0ZAVAce",
+            "name": "Mantel",
+            "url": "https://www.mantel.com/",
+            "category": "Sports",
+            "secCategory": "Cycling"
+        },
+        {
+            "id": "recszYTS8SG9thnO8",
+            "name": "Mister Design",
+            "url": "https://www.misterdesign.nl/",
+            "category": "Home",
+            "secCategory": "Interior Design"
+        },
+        {
+            "id": "recNltqBEB6xEUl3q",
+            "name": "Nordic Nest",
+            "url": "https://www.nordicnest.nl/",
+            "category": "Home",
+            "secCategory": "Interior Design"
+        },
+        {
+            "id": "recFzeHLoRRIfwHp0",
+            "name": "Obsidian",
+            "url": "https://obsidian.md",
+            "category": "Productivity",
+            "secCategory": "Productivity"
+        },
+        {
+            "id": "recD6yZwpNG69FcBF",
+            "name": "Smashing magazine",
+            "url": "https://www.smashingmagazine.com/",
+            "category": "Dev",
+            "secCategory": "Dev"
+        },
+        {
+            "id": "rec9QnKZtbyiklyfR",
+            "name": "Toolnation",
+            "url": "https://www.toolnation.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "recNV78WxP8Q7Nnqv",
+            "name": "Toolstation",
+            "url": "https://www.toolstation.nl/",
+            "category": "Home",
+            "secCategory": "DIY"
+        },
+        {
+            "id": "reccIwpy6aoGMbcsN",
+            "name": "Trading View",
+            "url": "https://www.tradingview.com/",
+            "category": "Finance",
+            "secCategory": "Investing"
+        },
+        {
+            "id": "rec789ZLg8J7ZizhO",
+            "name": "Wiggle",
+            "url": "https://www.wiggle.nl/",
+            "category": "Sports",
+            "secCategory": "Cycling"
+        }
+    ]
+}
